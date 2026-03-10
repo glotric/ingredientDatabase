@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ingredient-acquisition-pipeline"
+version = "0.1.0"
+description = "Phase-1 cosmetic ingredient acquisition and enrichment pipeline (CosIng + PubChem)"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Biocos Lab" }]
+dependencies = [
+  "requests>=2.32.0",
+  "pandas>=2.2.0",
+  "openpyxl>=3.1.0",
+  "beautifulsoup4>=4.12.0",
+  "lxml>=5.2.0",
+  "tenacity>=8.2.3",
+  "tqdm>=4.66.0",
+  "python-dotenv>=1.0.1",
+  "pydantic>=2.8.0",
+]
+
+[project.scripts]
+ingredient-pipeline = "ingredient_pipeline.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ingredient_pipeline*"]

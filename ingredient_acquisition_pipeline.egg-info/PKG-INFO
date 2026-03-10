@@ -1,3 +1,20 @@
+Metadata-Version: 2.4
+Name: ingredient-acquisition-pipeline
+Version: 0.1.0
+Summary: Phase-1 cosmetic ingredient acquisition and enrichment pipeline (CosIng + PubChem)
+Author: Biocos Lab
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.32.0
+Requires-Dist: pandas>=2.2.0
+Requires-Dist: openpyxl>=3.1.0
+Requires-Dist: beautifulsoup4>=4.12.0
+Requires-Dist: lxml>=5.2.0
+Requires-Dist: tenacity>=8.2.3
+Requires-Dist: tqdm>=4.66.0
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: pydantic>=2.8.0
+
 # Ingredient Acquisition + Canonical Normalization + Compatibility Pipeline
 
 Local-first pipeline for cosmetic ingredient acquisition, enrichment, and canonical identity resolution.

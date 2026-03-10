@@ -1,0 +1,2 @@
+[console_scripts]
+ingredient-pipeline = ingredient_pipeline.cli:main
